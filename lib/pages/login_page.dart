@@ -24,7 +24,7 @@ class _LoginPageState extends State<LoginPage> {
           InkWell(
             borderRadius: BorderRadius.circular(70),
             onTap: () {
-              Navigator.of(context).pushReplacementNamed('/');
+              Navigator.of(context).pop();
             },
             child: const Icon(
               Icons.arrow_back,

@@ -28,7 +28,7 @@ class _HomePageState extends State<HomePage> {
               BasicBtn(
                 text: 'entrar',
                 ontap: () {
-                  Navigator.of(context).pushReplacementNamed('/login');
+                  Navigator.of(context).pushNamed('/login');
                 },
               ),
               const SizedBox(
@@ -37,7 +37,7 @@ class _HomePageState extends State<HomePage> {
               BasicBtn(
                 text: 'Registrar',
                 ontap: () {
-                  Navigator.of(context).pushReplacementNamed('/register');
+                  Navigator.of(context).pushNamed('/register');
                 },
               ),
             ],
