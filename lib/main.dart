@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:newproj/pages/home_page.dart';
-import 'package:newproj/pages/login_page.dart';
-import 'package:newproj/pages/register_page.dart';
+import 'pages/pages_export.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,10 +11,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(initialRoute: '/', routes: {
-      '/': (context) => const HomePage(),
-      '/login': (context) => const LoginPage(),
-      '/register': (context) => const RegisterPage()
-    });
+    return MaterialApp(
+        debugShowCheckedModeBanner: false,
+        initialRoute: '/',
+        routes: {
+          '/': (context) => const OnboardPage(),
+          '/home': (context) => const HomePage(),
+          '/login': (context) => const LoginPage(),
+          '/register': (context) => const RegisterPage()
+        });
   }
 }
